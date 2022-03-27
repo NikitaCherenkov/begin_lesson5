@@ -8,7 +8,7 @@ bool isNum = int.TryParse(entry, out count);
 if (isNum & count > 1) {
     double[] array = new double[count];
     for (int i = 0; i < count; i++) array[i] = rnd.Next() - rnd.NextDouble() * rnd.Next();
-    double max = 0;
+    double max = array[0];
     double min = array[0];
     for (int n = 0; n < array.Length; n++) {
         max = Math.Max(max, array[n]);
